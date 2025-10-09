@@ -8,6 +8,8 @@ use Illuminate\Database\Seeder;
 use App\Models\Student;
 use App\Models\Guardian;
 use App\Models\Classroom;
+use App\Models\Teacher;
+use App\Models\Subject;
 
 class DatabaseSeeder extends Seeder
 {
@@ -22,5 +24,8 @@ class DatabaseSeeder extends Seeder
         Classroom::factory(4)
         ->hasStudents(5)
         ->create();
-    }
+        Subject::factory(5)
+        ->hasTeachers(1)
+        ->create();
+    }   
 }

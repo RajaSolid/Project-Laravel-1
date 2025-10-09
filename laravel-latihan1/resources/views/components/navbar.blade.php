@@ -11,6 +11,7 @@
           <div class="hidden md:block">
             <div class="ml-10 flex items-baseline space-x-4">
               <!-- Current: "bg-gray-950/50 text-white", Default: "text-gray-300 hover:bg-white/5 hover:text-white" -->
+              
               <x-nav-link
                 Href="/home"
                 :active="request()->is('home')"
@@ -45,6 +46,18 @@
               href="/classroom"
                 :active="request()->is('classroom')"
               >Classrooms
+              </x-nav-link>
+              
+              <x-nav-link
+              href="/subject"
+                :active="request()->is('subject')"
+              >Subjects
+              </x-nav-link>
+              
+              <x-nav-link
+              href="/teacher" 
+                :active="request()->is('teacher')"
+              >Teachers
               </x-nav-link>
             </div>
           </div>
