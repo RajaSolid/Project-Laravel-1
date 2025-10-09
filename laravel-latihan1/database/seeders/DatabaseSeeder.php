@@ -19,7 +19,7 @@ class DatabaseSeeder extends Seeder
     public function run(): void
     {
         User::factory(10)->create();
-        // Student::factory(15)->create();
+        Student::factory(15)->create();
         Guardian::factory(10)->create();
         Classroom::factory(4)
         ->hasStudents(5)
@@ -27,5 +27,5 @@ class DatabaseSeeder extends Seeder
         Subject::factory(5)
         ->hasTeachers(1)
         ->create();
-    }   
+    }           
 }

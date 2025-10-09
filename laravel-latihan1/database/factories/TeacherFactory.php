@@ -23,13 +23,6 @@ class TeacherFactory extends Factory
             'subject_id' => Subject::factory(),
             'email' => $this->faker->unique()->safeEmail(),
             'address' => $this->faker->address(),
-
-            
-            // $table->string('name');
-            // $table->integer('subject_id');
-            // $table->string('phone')->nullable();
-            // $table->string('email')->unique();
-            // $table->string('address');
         ];
     }
 }

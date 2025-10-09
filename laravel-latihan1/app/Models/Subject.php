@@ -7,10 +7,10 @@ use Illuminate\Database\Eloquent\Model;
 
 class Subject extends Model
 {
-    /** @use HasFactory<\Database\Factories\SubjectFactory> */
     use HasFactory;
 
-    public function teachers(){
+    public function teachers()
+    {
         return $this->hasOne(Teacher::class, 'subject_id');
     }
 }

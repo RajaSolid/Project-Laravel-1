@@ -19,7 +19,7 @@ class ClassroomFactory extends Factory
     {
         return [
             'name'  => $this->faker->name(),
-            'grade' => $this->faker->randomElement(['11 PPLG 1', '11 PPLG 2', '11 PPLG 3', '11 PPLG 4']),
+            'grade' => $this->faker->unique()->randomElement(['11 PPLG 1', '11 PPLG 2', '11 PPLG 3', '11 PPLG 4']),
         ];
     }
 }
