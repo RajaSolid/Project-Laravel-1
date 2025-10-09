@@ -18,8 +18,8 @@ class SubjectFactory extends Factory
     {
         return [
 
-        'name' => $this->faker->randomElement(['B.indo', 'B.Inggris', 'Matematika', 'B.Jepang', 'IPS']),
-        'description' => $this->faker->unique()->randomElement(['Lorem', 'Ipsum', 'Dol', 'Amet', 'Si'])
+        'name' => $this->faker->unique()->randomElement(['B.indo', 'B.Inggris', 'Matematika', 'B.Jepang', 'IPS']),
+        'description' => $this->faker->randomElement(['Lorem', 'Ipsum', 'Dol', 'Amet', 'Si'])
 
             
             // $table->string('name');
